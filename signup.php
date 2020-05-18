@@ -40,7 +40,7 @@ if (!empty($username) || !empty($password) || !empty($gender) || !empty($email) 
      $stmt->bind_param("ssssii", $username, $password, $gender, $email, $phoneCode, $phone);
      $stmt->execute();
      echo "New record inserted sucessfully";
-
+    //If no Connection
 } 
     else {
     echo "All Feilds are requierd";
